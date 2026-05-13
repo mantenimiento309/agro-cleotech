@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución - Agro CLEO</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="navbar-container"></div>
+<a href="index.html" class="back-btn">&#8592; Volver</a>
+<section class="hero-solucion reveal">
+    <div class="container hero-grid">
+
+        <div>
+            <h1>Revoluciona tu producción agrícola</h1>
+            <p>
+                Mejorando sus cosechas con agronomos digitales para prepararse
+                para el cambio climatico, monetizando desperdicios mediante
+                alimentun residua(upcycled food), conectando con agroindustrias
+                de maquila de productos nutraceuticos-farmaceuticos para
+                exportacion y accediendo a compradores internacionales mediante
+                una pequeña SUPER APP agro-upcycled-biotech.
+            </p>
+
+            <button class="btn primary" onclick="openModal('proyecto')">
+                Ver cómo funciona
+            </button>
+        </div>
+
+        <div>
+            <img src="assets/images/prototipo.png" class="hero-img floating">
+        </div>
+
+    </div>
+</section>
+
+<section class="metrics reveal">
+    <div class="container grid-3">
+
+        <div class="metric-card">
+            <h3>+40%</h3>
+            <p>Mejora en productividad</p>
+        </div>
+
+        <div class="metric-card">
+            <h3>-30%</h3>
+            <p>Reducción de pérdidas</p>
+        </div>
+
+        <div class="metric-card">
+            <h3>24/7</h3>
+            <p>Monitoreo continuo</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="flow reveal">
+    <div class="container">
+
+        <h2 class="center">Cómo funciona el sistema</h2>
+
+        <div class="flow-line">
+
+            <div class="flow-item">
+                <div class="circle">1</div>
+                <h3>Captura de datos</h3>
+                <p>Sensores + satélite en tiempo real</p>
+            </div>
+
+            <div class="flow-item">
+                <div class="circle">2</div>
+                <h3>Procesamiento IA</h3>
+                <p>Análisis predictivo avanzado</p>
+            </div>
+
+            <div class="flow-item">
+                <div class="circle">3</div>
+                <h3>Decisión inteligente</h3>
+                <p>Acciones optimizadas</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="dashboard-pro reveal">
+    <div class="container dashboard-flex">
+
+        <div class="dashboard-info">
+            <h2>Control total desde un solo lugar</h2>
+            <p>
+                Visualiza tu cultivo, recibe alertas y toma decisiones inteligentes.
+            </p>
+
+            <ul>
+                <li>✔ Clima en tiempo real</li>
+                <li>✔ Alertas inteligentes</li>
+                <li>✔ Recomendaciones automáticas</li>
+            </ul>
+        </div>
+
+        <div class="dashboard-visual floating">
+            <img src="assets/images/prototipo.png">
+        </div>
+
+    </div>
+</section>
+
+<section class="comparison-pro reveal">
+    <div class="container">
+
+        <h2 class="center">Evolución agrícola</h2>
+
+        <div class="comparison-grid">
+
+            <div class="comparison-card old reveal-left">
+                <h3> Tradicional</h3>
+                <ul>
+                    <li>Decisiones por intuición</li>
+                    <li>Alto riesgo climático</li>
+                    <li>Pérdidas frecuentes</li>
+                    <li>Poca tecnología</li>
+                </ul>
+            </div>
+
+            <div class="comparison-card new reveal-right">
+                <h3> Agro CLEO</h3>
+                <ul>
+                    <li>Datos en tiempo real</li>
+                    <li>IA predictiva</li>
+                    <li>Alertas inteligentes</li>
+                    <li>Optimización de cultivos</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="cta reveal">
+    <div class="container">
+        <h2>Explora el sistema en acción</h2>
+        <a href="prototipo.html" class="btn primary">
+            Ver prototipo
+        </a>
+    </div>
+</section>
+
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">×</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-text"></p>
+    </div>
+</div>
+
+<div id="footer-container"></div>
+
+<script src="js/main.js"></script>
+
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+    reveals.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+            el.classList.add("active");
+        }
+    });
+});
+</script>
+
+</body>
+</html>

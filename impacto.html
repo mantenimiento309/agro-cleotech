@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacto - Agro CLEO</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="navbar-container"></div>
+<a href="index.html" class="back-btn">&#8592; Volver</a>
+<section class="impact-hero reveal">
+    <div class="container">
+
+        <h1>Transformando la agricultura con tecnología</h1>
+        <p>
+            Agro CLEO genera impacto real en productividad, sostenibilidad
+            y rentabilidad del sector agrícola.
+        </p>
+
+    </div>
+</section>
+
+<section class="impact-metrics reveal">
+    <div class="container metrics-flex">
+
+        <div class="big-metric">
+            <h2>+30%</h2>
+            <p>Productividad</p>
+        </div>
+
+        <div class="big-metric">
+            <h2>-20%</h2>
+            <p>Uso de agua</p>
+        </div>
+
+        <div class="big-metric">
+            <h2>-15%</h2>
+            <p>Pérdidas agrícolas</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="impact-graph reveal">
+    <div class="container">
+
+        <h2 class="center">Impacto medible</h2>
+
+        <div class="graph">
+
+            <div class="bar" style="height: 70%">
+                <span>Antes</span>
+            </div>
+
+            <div class="bar active" style="height: 100%">
+                <span>Después</span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="comparison-pro reveal">
+    <div class="container">
+
+        <h2 class="center">Evolución del sistema</h2>
+
+        <div class="comparison-grid">
+
+            <div class="comparison-card old reveal-left">
+                <h3> Antes</h3>
+                <ul>
+                    <li>Decisiones sin datos</li>
+                    <li>Alto riesgo climático</li>
+                    <li>Baja eficiencia</li>
+                </ul>
+            </div>
+
+            <div class="comparison-card new reveal-right">
+                <h3> Después</h3>
+                <ul>
+                    <li>Datos en tiempo real</li>
+                    <li>IA predictiva</li>
+                    <li>Optimización total</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="impact-real reveal">
+    <div class="container impact-grid">
+
+        <div class="impact-box">
+            <h3> Agricultores</h3>
+            <p>Mayor ingreso y mejor calidad de vida.</p>
+        </div>
+
+        <div class="impact-box">
+            <h3> Ambiental</h3>
+            <p>Uso eficiente de agua y reducción de impacto.</p>
+        </div>
+
+        <div class="impact-box">
+            <h3> Económico</h3>
+            <p>Fortalecimiento del sector agrícola.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="cta reveal">
+    <div class="container">
+        <h2>Descubre cómo funciona la tecnología</h2>
+        <a href="solucion.html" class="btn primary">
+            Ver solución
+        </a>
+    </div>
+</section>
+
+<div id="footer-container"></div>
+
+<script src="js/main.js"></script>
+
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+    reveals.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+            el.classList.add("active");
+        }
+    });
+});
+</script>
+
+</body>
+</html>
